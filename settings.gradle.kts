@@ -5,3 +5,7 @@ rootProject.name = "eCommerce"
 include("product")
 include("product:persistence")
 findProject(":product:persistence")?.name = "persistence"
+include("product:presentation")
+findProject(":product:presentation")?.name = "presentation"
+include("product:core")
+findProject(":product:core")?.name = "core"
