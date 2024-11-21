@@ -1,0 +1,11 @@
+server:
+  port: ${product_port}
+
+spring:
+  data:
+    mongodb:
+      uri: ${mongodb_uri}
+      auto-index-creation: true
+    redis:
+      host: localhost
+      port: ${redis_port}
