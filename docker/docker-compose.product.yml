@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  product-server:
+    container_name: product-server
+    build: .
+    environment:
+      - TZ=Asia/Seoul
+    networks:
+      - seungkyu
+    env_file:
+      - .env
+    ports:
+      - "9000:9000"
+
+networks:
+  seungkyu:
+    external: true
